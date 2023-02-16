@@ -23,12 +23,12 @@ function writePassword() {
   if (correctPrompts) {
      var newPassword = generatePassword();
   passwordText.value = newPassword;
-   //If not password value equals what's inside of parenthesis
+   //If not, password value equals what's inside of parenthesis.
 }  else {
   passwordText.value = "";
 }
 }
-// generatePassword would be based on prompts
+// generatePassword would be based on prompts.
 function generatePassword() {
 
   var password = "";

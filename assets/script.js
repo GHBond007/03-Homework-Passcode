@@ -1,3 +1,4 @@
+// Variables to be defined in generatePassword homework.
 var characterLength = 8;
 
 var choiceArr = [];
@@ -10,24 +11,19 @@ var numberArr =  ['0','1','2','3','4','5','6','7','8','9'];
 
 var specialCharArr = ['~','!','@','#','$','%','^','&','*','(',')','-','_','=','+'];
 
-
-
-
-
-//Assignment Code
 var generateBtn = document.querySelector("#generate");
-// Add event listener to generate button
+// Add event listener to generate button.
 generateBtn.addEventListener("click", writePassword);
 
 // Write password to the prompts
 function writePassword() {
-  var correctPrompts = getPrompts(); //it will return either true or false
+  var correctPrompts = getPrompts(); //Prompts will return either true or false.
   var passwordText = document.querySelector("#password");
-  
+  // If prompts are correct it should create a new password
   if (correctPrompts) {
      var newPassword = generatePassword();
   passwordText.value = newPassword;
-   
+   //If not password value equals what's inside of parenthesis
 }  else {
   passwordText.value = "";
 }
@@ -47,7 +43,7 @@ function getPrompts() {
   choiceArr = [];
 // ask for number of characters. Number of characters between 8 and 128
 characterLength = parseInt(prompt("How many characters do you want in your password?(8 to 128 characters)"));
-
+// Character length is between 8 and 128 characters. If not it will prompt to try again.
 if  (isNaN(characterLength) || characterLength <8 || characterLength >128) {
   alert("Character length has to be between 8-128 digits. Please try again.");
 return false;

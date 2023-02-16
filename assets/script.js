@@ -1,5 +1,5 @@
 // Variables to be defined in generatePassword homework.
-var characterLength = 8;
+var characterLength = 8-128;
 
 var choiceArr = [];
 

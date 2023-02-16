@@ -44,3 +44,4 @@ The following image shows the web application's appearance and functionality:
 
 ![The Password Generator application displays a red button to "Generate Password".](./Assets/03-javascript-homework-demo.png)
 
+![Screenshot 2023-02-16 Password Generator](https://user-images.githubusercontent.com/121248438/219484350-4cbe1274-320d-4241-b713-19ecaa3a7f82.png)

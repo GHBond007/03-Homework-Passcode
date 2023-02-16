@@ -28,9 +28,9 @@ function writePassword() {
   passwordText.value = "";
 }
 }
-
-function generatePassword() {
 // generatePassword would be based on prompts
+function generatePassword() {
+
   var password = "";
 // I will use Math.random to figure number of characters
 for (var i = 0; i < characterLength; i++) {
